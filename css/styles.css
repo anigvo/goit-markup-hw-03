@@ -1,0 +1,293 @@
+:root {
+    --logo-primary-color: #000000;
+    --logo-secondary-color: #2196F3;
+    --headers-color: #212121;
+    --primary-text-color: #757575;
+    --secondary-text-color: #FFFFFF;
+    --body-background-color: #FFFFFF;
+    --secondary-background-color: #F5F4FA;
+    --footer-contacts-color: #FFFFFF60;
+    --primary-background-color: #2F303A;
+    --hero-button-active: #188CE8;
+    --header-border: #ECECEC;
+    --example-item-border: #EEEEEE;
+}
+
+body {
+    background-color: var(--body-background-color);
+    color: var(--primary-text-color);
+    font-family: Roboto, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {
+margin: 0;
+padding: 0;
+}
+
+.container {
+    width: 1200px;
+    padding: 0px 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+list-style: none;
+}
+
+/*----------------------HEADER----------------------*/
+
+.header {
+    border-bottom: 1px solid var(--header-border);
+}
+
+.logo-header {
+    color: var(--logo-primary-color);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.logo-color {
+    color: var(--logo-secondary-color);
+}
+
+.site-nav .link {
+    color: var(--headers-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--logo-secondary-color);
+}
+
+.site-nav .link.current {
+    color: var(--logo-secondary-color);
+}
+
+.contacts-header .link {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.contacts-header .link:hover,
+.contacts-header .link:focus {
+    color: var(--logo-secondary-color);
+}
+
+/*----------------------FOOTER----------------------*/
+
+.footer {
+    background-color: var(--primary-background-color);
+}
+
+.logo-footer {
+    color: var(--secondary-text-color);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    }
+
+.contacts-footer .link {
+    color: var(--footer-contacts-color);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.contacts-footer .link:hover,
+.contacts-footer .link:focus {
+    color: var(--logo-secondary-color);
+}
+
+.contacts-address .link {
+    color: var(--secondary-text-color);
+}
+
+/*----------------------MAIN STUDIO----------------------*/
+
+.section {
+    padding: 94px 0px;
+}
+
+.section.no-padding {
+    padding-top: 0px;
+}
+
+.hero {
+    background-color: var(--primary-background-color);
+    text-align: center;
+}
+
+.hero-title {
+    color: var(--secondary-text-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.hero-button {
+    color: var(--secondary-text-color);
+    background-color: var(--logo-secondary-color);
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 10px 24px;
+    min-width: 200px;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    background-color: var(--hero-button-active);
+}
+
+
+.section-title {
+    color:var(--headers-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
+
+.feature-item {
+}
+
+.feature-title {
+    color: var(--headers-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+}
+
+.feature-content {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.work-item {
+text-align: center;
+}
+
+.background {
+    background-color: var(--secondary-background-color);
+}
+
+.team-title {
+    color: var(--headers-color);
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.team-item {
+    font-size: 16px;
+    line-height: 1.87;
+    text-align: center;
+    letter-spacing: 0.03em;
+    background-color: var(--body-background-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    padding-bottom: 30px;
+    width: 270px;
+}
+
+/*----------------------MAIN PORTFOLIO----------------------*/
+
+.example-item {
+    color: var(--primary-text-color);
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    border: 1px solid var(--example-item-border);
+    width: 370px;
+}
+
+.example-title {
+    color: var(--headers-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin-top: 20px;
+    margin-bottom: 4px;
+    padding: 0px 20px;
+}
+
+.example-description {
+    color: var(--primary-text-color);
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.button-list {
+    margin-bottom: 50px;
+}
+
+.portfolio-button {
+    background-color: var(--secondary-background-color);
+    color: var(--headers-color);
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 6px 22px;
+    border: 1px solid transparent;
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+    color: var(--secondary-text-color);
+    background-color: var(--logo-secondary-color);
+    font-family: Roboto, sans-serif;
+}
